@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(204, 43%, 93%);
+}
+
+.main-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+    
+}
+
+.main{
+    border-radius: 10px;
+    width: 650px;
+    height: 480px;
+    overflow: hidden;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.div-top{
+    background-color: white;
+    height: 45%;
+    padding: 35px;
+    font-size: 16px;
+}
+
+.div-top h1{
+    color: hsl(179, 62%, 43%);
+    padding-bottom: 15px;
+}
+
+.div-top h2{
+    color: hsl(71, 73%, 54%);
+    padding-bottom: 15px;
+}
+
+.div-top p{
+    color: hsl(218, 22%, 67%);
+}
+
+.div-bottom{
+    display: flex;
+    height: 55%;
+}
+
+.div-left{
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    width: 50%;
+    padding: 35px;
+}
+
+.div-left h1{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.div-left h2{
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.div-left span{
+    font-size: 14px;
+    color: hsla(203, 44%, 93%, 0.89);
+}
+
+.div-left button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 25px;
+    margin-top: 35px;
+    width: 95%;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.div-left button:hover{
+    opacity: 0.9;
+}
+
+
+.div-right{
+    background-color: hsl(179, 61%, 47%);
+    color: white;
+    width: 50%;
+    padding: 35px;
+}
+
+.div-right h1{
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.div-right ul{
+    list-style: none;
+    line-height: 1.4;
+}
+
+.div-right li{
+    color: rgba(255, 255, 255, 0.87);
+}
+
+.div-right li::before{
+    content: "✓";
+    color: white;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 760px){
+    .main{
+        height: 760px;
+        width: 350px;
+    }
+    .div-top{
+        height: 34%;
+    }
+    .div-top h1{
+        font-size: 16px;
+    }
+    .div-bottom{
+        height: 66%;
+        flex-direction: column;
+    }
+    .div-left{
+        width: 100%;
+    }
+    .div-right{
+        width: 100%;
+        padding: 15px  35px 35px;
+    }
+}
+    
